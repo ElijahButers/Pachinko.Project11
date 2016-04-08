@@ -12,6 +12,11 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
+        let background = SKSpriteNode(imageNamed: "background.jpg")
+        background.position = CGPoint(x: 512, y: 384)
+        background.blendMode = .Replace
+        background.zPosition = -1
+        addChild(background)
         
     }
     
