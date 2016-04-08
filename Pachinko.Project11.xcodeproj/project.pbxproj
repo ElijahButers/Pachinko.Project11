@@ -12,8 +12,8 @@
 		E2F6C9A01CB82A91004968BD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6C99F1CB82A91004968BD /* GameScene.swift */; };
 		E2F6C9A21CB82A91004968BD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6C9A11CB82A91004968BD /* GameViewController.swift */; };
 		E2F6C9A51CB82A91004968BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F6C9A31CB82A91004968BD /* Main.storyboard */; };
-		E2F6C9A71CB82A91004968BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F6C9A61CB82A91004968BD /* Assets.xcassets */; };
 		E2F6C9AA1CB82A91004968BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F6C9A81CB82A91004968BD /* LaunchScreen.storyboard */; };
+		E2F6C9B41CB82ED2004968BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F6C9B31CB82ED2004968BD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +23,9 @@
 		E2F6C99F1CB82A91004968BD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E2F6C9A11CB82A91004968BD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E2F6C9A41CB82A91004968BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2F6C9A61CB82A91004968BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F6C9A91CB82A91004968BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F6C9AB1CB82A91004968BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F6C9B31CB82ED2004968BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 				E2F6C99D1CB82A91004968BD /* GameScene.sks */,
 				E2F6C99F1CB82A91004968BD /* GameScene.swift */,
 				E2F6C9A11CB82A91004968BD /* GameViewController.swift */,
+				E2F6C9B31CB82ED2004968BD /* Assets.xcassets */,
 				E2F6C9A31CB82A91004968BD /* Main.storyboard */,
-				E2F6C9A61CB82A91004968BD /* Assets.xcassets */,
 				E2F6C9A81CB82A91004968BD /* LaunchScreen.storyboard */,
 				E2F6C9AB1CB82A91004968BD /* Info.plist */,
 			);
@@ -130,7 +130,7 @@
 			files = (
 				E2F6C99E1CB82A91004968BD /* GameScene.sks in Resources */,
 				E2F6C9AA1CB82A91004968BD /* LaunchScreen.storyboard in Resources */,
-				E2F6C9A71CB82A91004968BD /* Assets.xcassets in Resources */,
+				E2F6C9B41CB82ED2004968BD /* Assets.xcassets in Resources */,
 				E2F6C9A51CB82A91004968BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +294,7 @@
 				E2F6C9B01CB82A91004968BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
