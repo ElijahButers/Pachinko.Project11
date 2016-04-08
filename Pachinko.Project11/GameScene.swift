@@ -23,6 +23,13 @@ class GameScene: SKScene {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
         
+        if let touch = touches.first {
+            let location = touch.locationInNode(self)
+            let box = SKSpriteNode(color: UIColor.redColor(), size: CGSize(width: 64, height: 64))
+            box.position = location
+            addChild(box)
+
+        }
     }
    
     override func update(currentTime: CFTimeInterval) {
