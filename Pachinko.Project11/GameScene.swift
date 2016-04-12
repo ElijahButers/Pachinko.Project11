@@ -78,6 +78,9 @@ class GameScene: SKScene {
         let spinForever = SKAction.repeatActionForever(spin)
         slotGlow.runAction(spinForever)
         
+        slotBase.physicsBody = SKPhysicsBody(rectangleOfSize: slotBase.size)
+        slotBase.physicsBody?.dynamic = false
+        
         addChild(slotBase)
         addChild(slotGlow)
     }
