@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
@@ -30,6 +30,8 @@ class GameScene: SKScene {
         makeBouncerAt(CGPoint(x: 512, y: 0))
         makeBouncerAt(CGPoint(x: 768, y: 0))
         makeBouncerAt(CGPoint(x: 1024, y: 0))
+        
+        physicsWorld.contactDelegate = self
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
