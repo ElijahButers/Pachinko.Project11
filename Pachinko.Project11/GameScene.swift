@@ -57,7 +57,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let bouncer = SKSpriteNode(imageNamed: "bouncer")
         bouncer.position = position
         bouncer.physicsBody = SKPhysicsBody(circleOfRadius: bouncer.size.width / 2.0)
-        bouncer.physicsBody?.dynamic = false
+        bouncer.physicsBody!.contactTestBitMask = bouncer.physicsBody!.collisionBitMask
+        bouncer.physicsBody!.dynamic = false
         addChild(bouncer)
     }
     
