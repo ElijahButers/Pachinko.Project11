@@ -90,4 +90,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(slotBase)
         addChild(slotGlow)
     }
+    
+    func collisionBetweenBall(ball: SKNode, object: SKNode) {
+        
+        if object.name == "good" {
+            destroyBall(ball)
+        } else if object.name == "bad" {
+            destroyBall(ball)
+        }
+    }
+    
+    func destroyBall(ball: SKNode) {
+        ball.removeFromParent()
+    }
 }
