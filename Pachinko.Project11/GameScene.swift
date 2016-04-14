@@ -110,8 +110,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if object.name == "good" {
             destroyBall(ball)
+            score += 1
         } else if object.name == "bad" {
             destroyBall(ball)
+            score -= 1
         }
     }
     
