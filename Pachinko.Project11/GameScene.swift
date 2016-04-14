@@ -9,6 +9,15 @@
 import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    
+    var scoreLabel: SKLabelNode!
+    
+    var score: Int = 0 {
+    didSet {
+        scoreLabel.text = "Score: \(score)"
+        }
+    }
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
@@ -32,6 +41,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         makeBouncerAt(CGPoint(x: 1024, y: 0))
         
         physicsWorld.contactDelegate = self
+        
+        scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
+        scoreLabel.text = "Score: 0"
+        scoreLabel.horizontalAlignmentMode = .Right
+        scoreLabel.position = CGPoint(x: 980, y: 700)
+        addChild(scoreLabel)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
