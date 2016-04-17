@@ -42,6 +42,7 @@
 		E2F6CA5D1CB84E54004968BD /* slotGlowGood.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F6CA411CB84E54004968BD /* slotGlowGood.png */; };
 		E2F6CA5E1CB84E54004968BD /* slotGlowGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F6CA421CB84E54004968BD /* slotGlowGood@2x.png */; };
 		E2F6CA5F1CB84E54004968BD /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F6CA431CB84E54004968BD /* spark.png */; };
+		E2F722111CC39F5700B246A7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F722101CC39F5700B246A7 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		E2F6CA411CB84E54004968BD /* slotGlowGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slotGlowGood.png; sourceTree = "<group>"; };
 		E2F6CA421CB84E54004968BD /* slotGlowGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotGlowGood@2x.png"; sourceTree = "<group>"; };
 		E2F6CA431CB84E54004968BD /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		E2F722101CC39F5700B246A7 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				E2F6C99D1CB82A91004968BD /* GameScene.sks */,
 				E2F6C99F1CB82A91004968BD /* GameScene.swift */,
 				E2F6C9A11CB82A91004968BD /* GameViewController.swift */,
+				E2F722101CC39F5700B246A7 /* Helper.swift */,
 				E2F6C9B31CB82ED2004968BD /* Assets.xcassets */,
 				E2F6CA271CB84E54004968BD /* Content */,
 				E2F6C9A31CB82A91004968BD /* Main.storyboard */,
@@ -265,6 +268,7 @@
 				E2F6C9A01CB82A91004968BD /* GameScene.swift in Sources */,
 				E2F6C9A21CB82A91004968BD /* GameViewController.swift in Sources */,
 				E2F6C99C1CB82A91004968BD /* AppDelegate.swift in Sources */,
+				E2F722111CC39F5700B246A7 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
