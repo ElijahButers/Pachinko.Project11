@@ -70,12 +70,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if let touch = touches.first {
             let location = touch.locationInNode(self)
-            let ball = SKSpriteNode(imageNamed: "ballRed")
-            ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
-            ball.physicsBody?.restitution = 0.4
-            ball.name = "ball"
-            ball.position = location
-            addChild(ball)
+            let objects = nodesAtPoint(location) as [SKNode]
+            
+            if objects.contains(editLabel) {
+                editingMode = !editingMode
+            } else {
+                let ball = SKSpriteNode(imageNamed: "ballRed")
+                ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
+                ball.physicsBody?.restitution = 0.4
+                ball.name = "ball"
+                ball.position = location
+                addChild(ball)
+            }
         }
     }
    
