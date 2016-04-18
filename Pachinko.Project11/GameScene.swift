@@ -88,7 +88,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             } else {
                 let ball = SKSpriteNode(imageNamed: "ballRed")
                 ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
-                ball.physicsBody?.restitution = 0.4
+                ball.physicsBody!.contactTestBitMask = ball.physicsBody!.collisionBitMask
+                ball.physicsBody!.restitution = 0.4
                 ball.name = "ball"
                 ball.position = location
                 addChild(ball)
@@ -152,6 +153,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func destroyBall(ball: SKNode) {
+        if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
+            fireParticles.position = ball.position
+            addChild(fireParticles)
+        }
         ball.removeFromParent()
     }
     
